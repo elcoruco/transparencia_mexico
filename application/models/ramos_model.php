@@ -1,12 +1,12 @@
 <?php if(! defined('BASEPATH')) exit('Generado aquí en el hackatón, no sean mala onda');
 
 /**
-* Egresos delegacionales
+* Ramos_model
 *
 * @author elcoruco
 */
-class Egresos_delegacionales extends CI_Model{
-  public $db = "egresos_delegaciones";
+class Ramos_model extends CI_Model{
+  const TABLE = "ramos_mexico";
   
   public function __construct()
   {
@@ -20,8 +20,8 @@ class Egresos_delegacionales extends CI_Model{
   * @return object
   */
   public function get(){
-    $query = $this->db->get($this->$db);
-    return $query->result_array();
+    $query = $this->db->get(self::TABLE);
+    return $query->result();
   }
 
 }

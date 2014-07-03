@@ -6,7 +6,7 @@
 </head>
 <body>
   <pre>
-    <?php echo $response; ?>
+    <?php var_dump($ramos); ?>
   </pre>
 </body>
 </html>

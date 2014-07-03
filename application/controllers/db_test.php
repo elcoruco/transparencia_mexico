@@ -7,14 +7,17 @@ class DB_test extends CI_Controller {
   */
   function __construct(){
     parent::__construct();
-    this->load->library("");
+    $this->load->model("ramos_model", "ramos");
   }
 
   public function index()
   {
-    $this->load->view("test_view");
+    // test ramos data
+    $response = [];
+    $response['ramos'] = $this->ramos->get();
+    $this->load->view("test_view", $response);
   }
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of filedb_test.php */
+/* Location: ./application/controllers/db_test.php */
