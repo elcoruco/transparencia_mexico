@@ -19,6 +19,6 @@
 
   <!-- carga el require.js 
        todo el código está dentro de js/apps/egresos2014  -->
-  <script data-main="/js/apps/main" src="/js/vendor/require.js"></script>
+  <script data-main="/js/apps/egresos2014/main" src="/js/vendor/require.js"></script>
 </body>
 </html>

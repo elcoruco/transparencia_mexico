@@ -9,10 +9,10 @@
 require.config({
   baseUrl : "/js/apps/egresos2014",
   paths : {
-    jquery : "/js/vendor/jquery",
-    jquery : "/js/vendor/backbone",
-    jquery : "/js/vendor/underscore",
-    jquery : "/js/vendor/text"
+    jquery     : "/js/vendor/jquery",
+    backbone   : "/js/vendor/backbone",
+    underscore : "/js/vendor/underscore",
+    text       : "/js/vendor/text"
   },
 
   shim : {
@@ -30,6 +30,6 @@ require.config({
 // internal Backbone functionality
 var app;
 
-require(["controller"], function Controller{
+require(["controller"], function (Controller){
   app = new Controller();
 });

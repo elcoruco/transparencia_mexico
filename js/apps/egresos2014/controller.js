@@ -11,7 +11,7 @@ define(function(require){
   //
   //  L O A D   T H E   A S S E T S (require)
   //
-  var Backbone  = require("backbone"),
+  var Backbone  = require("backbone");
 
       // load the data
       

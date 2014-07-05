@@ -12,7 +12,13 @@ class Egresos2014 extends CI_Controller {
 
   public function index()
   {
-    
+    $this->load->view("egresos_federacion_view");
+  }
+
+  public function ramos_json(){
+    $ramos = $this->ramos->get();
+    $this->output->set_content_type("application/json");
+    $this->output->set_output(json_encode($ramos));
   }
 }
 
