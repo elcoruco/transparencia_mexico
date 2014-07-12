@@ -24,4 +24,15 @@ class Ramos_model extends CI_Model{
     return $query->result();
   }
 
+  /*
+  * return one "ramo"
+  *
+  * @access public
+  * @return object
+  */
+  public function get_one($ramo){
+    $query = $this->db->get_where(self::TABLE, ["ramo" => $ramo]);
+    return $query->row();
+  }
+
 }

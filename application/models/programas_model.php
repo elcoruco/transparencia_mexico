@@ -14,7 +14,9 @@ class Programas_model extends CI_Model{
   }
 
   public function count_by_ramo($ramo){
-
+    $this->db->where("ramo", $ramo);
+    $this->db->from(self::TABLE);
+    return $this->db->count_all_results();
   }
 
 }
